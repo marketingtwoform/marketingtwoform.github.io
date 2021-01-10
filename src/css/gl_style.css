@@ -1,0 +1,103 @@
+a:hover{
+	text-decoration: none;
+	color: #4285f4;
+}
+
+.row{
+	height: -webkit-fill-available;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+.card{
+	max-width: 452px;
+	border-radius: 8px;
+}
+
+.card-text{
+	float: left;
+	margin-top: -12px;
+}
+
+.logo_gl{
+	margin-top: 22px;
+}
+
+.text-muted{
+	font-size: 12px;
+}
+
+.criar_conta{
+	float: left;
+	margin-top: 7px;
+	margin-left: -12px;
+}
+
+.botao{
+	float: right;
+	margin-right: -15px;
+}
+
+.rodape{
+	width: 100%;
+	position: absolute;
+	bottom: -8%;
+}
+
+.rtype{
+	float: right;
+    text-align: center;
+    min-width: 30%;
+}
+
+.rline{
+	width: 50%;
+    float: left;
+}
+
+.seta{
+	border-color: currentColor transparent transparent transparent;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 105px;
+    top: 8px;
+}
+
+.error{
+	display: block;
+	color: #d50000;
+	font-size: 13px;
+	margin-top: 5px;
+}
+.voltar{
+	cursor:pointer;
+}
+
+@media (max-width: 991.98px) {
+	body{
+		background: #FFF;
+		padding: 0;
+	}
+	.card{
+		padding: 5px;
+		margin-top: -130px;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	.rodape{
+		width: 100%;
+		position: fixed;
+		bottom: 15px;
+	}
+	.row{
+		height: 100%;
+		display: block;
+		margin-top: 175px;
+	}
+
+	
+}

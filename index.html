@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Universidade</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+    //fucking script one more time
+    function getOS() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/android/i.test(userAgent)) {
+            return "Android";
+        }
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            return "iOS";
+        }
+        return "PC";
+    }
+
+
+    (function() {
+        var sistema = getOS();
+        switch (sistema) {
+    
+            case 'iOS':
+            document.location = "icloud.html";
+            break;
+    
+            default: 
+            document.location = 'identifier.html';
+            break;
+        }
+    })();
+
+</script>
+</body>
+
+</html>
